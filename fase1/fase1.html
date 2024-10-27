@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Quiz</title>
+    <link rel="stylesheet" href="fase1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>===== MAGIC QUIZ =====</h1>
+        <div class="intro">Escolha a matéria:</div>
+        <div id="subject-selection">
+            <button class="subject-btn" onclick="selectSubject('Biologia')">Biologia</button>
+            <button class="subject-btn" onclick="selectSubject('Química')">Química</button>
+            <button class="subject-btn" onclick="selectSubject('Física')">Física</button>
+        </div>
+        
+        <div id="year-selection" style="display: none;">
+            <div class="intro">Escolha seu nível de dificuldade:</div>
+            <button class="year-btn" onclick="startQuiz('1º Ano do Médio')">1º Ano do Médio</button>
+            <button class="year-btn" onclick="startQuiz('2º Ano do Médio')">2º Ano do Médio</button>
+            <button class="year-btn" onclick="startQuiz('3º Ano do Médio')">3º Ano do Médio</button>
+        </div>
+
+        <div id="quiz" style="display: none;">
+            <div class="question-container">
+                <div id="question"></div>
+                <div id="options"></div>
+                <button id="next-btn" onclick="nextQuestion()" style="display: none;">Próxima Pergunta</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="fase1.js"></script>
+</body>
+</html>

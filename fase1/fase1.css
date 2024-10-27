@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#subject-selection, #year-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subject-btn, .year-btn, #next-btn {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.subject-btn:hover, .year-btn:hover, #next-btn:hover {
+    background-color: #e67350;
+    transform: scale(1.05);
+}
+
+.question-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.question-container:hover {
+    transform: scale(1.02);
+}
+
+#question {
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+#options {
+    margin: 20px 0;
+}
+
+.option-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    margin: 12px 0; /* Aumentado de 8px para 12px */
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.option-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
